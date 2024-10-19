@@ -8,7 +8,7 @@ def multiply(x, y):
     return x*y
 
 def to_the_power_off(x, y):
-    return x ** y
+    return x**y
 
 def divide(x, y):
     if y!=0:
@@ -18,13 +18,13 @@ def divide(x, y):
     
 
 while True:
-    num1 =float((input("Enter the first number ")))
+    num1 =float((input("Enter the first number \n")))
     if input == str:
         print('Helytelen formátum')
     
     
-    num2 = float(input("Enter the second number "))
-    operation = input("Enter the operation (+, -, *, **, /): " )
+    num2 = float(input("Enter the second number \n"))
+    operation = input("Enter the operation (+, -, *, **, /):\nor ype 'exit' to close program\n" )
 
     result = 0
 
@@ -38,10 +38,14 @@ while True:
         result = multiply(num1, num2)
 
     if operation == '**':
-        to_the_power_off(num1, num2)
+        result = to_the_power_off(num1, num2)
 
     if operation == '/':
         result = divide(num1, num2)
 
+    if operation == 'exit':
+        break
+
     print(result)
+
 
