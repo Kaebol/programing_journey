@@ -1,10 +1,10 @@
 import random
-
+#program is case sensitive
 def computer_guess(y):
     low = 1
     high = y
     feedback = " "
-    while feedback != 'c':
+    while feedback != 'C':
         if low != high:
             guess = random.randint(low, high)
         else:
