@@ -8,7 +8,7 @@ def multiply(x, y):
     return x*y
 
 def to_the_power_off(x, y):
-    return x**y
+    return x ** y
 
 def divide(x, y):
     if y!=0:
@@ -18,7 +18,7 @@ def divide(x, y):
     
 
 while True:
-    num1 =(input("Enter the first number "))
+    num1 =float((input("Enter the first number ")))
     if input == str:
         print('Helytelen formátum')
     
